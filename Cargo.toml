@@ -1,0 +1,14 @@
+[package]
+name = "rocket-post-as-delete"
+version = "0.1.0"
+edition = "2018"
+license = "MIT"
+authors = [ "Gabriel Fontes <eu@misterio.me>" ]
+description = "A rocket fairing rewriting POST requests with delete suffix to their DELETE counterparts"
+readme = "README.md"
+repository = "https://github.com/misterio77/rocket-post-as-delete"
+categories = [ "development-tools", "web-programming" ]
+keywords = [ "rocket", "post", "delete", "forms" ]
+
+[dependencies]
+rocket = "0.5.0-rc.1"
