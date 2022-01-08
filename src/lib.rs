@@ -25,14 +25,10 @@
 //! 
 //! # use rocket::local::blocking::Client;
 //! # use rocket::http::Status;
-//! 
-//! # #[test]
-//! # fn rewrites() {
 //! #     let client = Client::tracked(rocket()).expect("valid rocket instance");
 //! #     let response = client.post("/foo/bar/delete").dispatch();
 //! #     assert_eq!(response.status(), Status::Ok);
 //! #     assert_eq!(response.into_string().unwrap(), "Poof!");
-//! # }
 //! ```
 //!
 //! Now forms such as this (`POST` verb, and submit URL suffixed by `/delete`):
